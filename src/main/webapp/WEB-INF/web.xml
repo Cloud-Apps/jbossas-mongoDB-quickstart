@@ -22,12 +22,16 @@
                  <param-value>27017</param-value>
              </init-param>
              <init-param>
+                 <param-name>db</param-name>
+                 <param-value>testmongo</param-value>
+             </init-param>
+             <init-param>
                  <param-name>user</param-name>
                  <param-value>admin</param-value>
              </init-param>
              <init-param>
                  <param-name>password</param-name>
-                 <param-value> EbR9wQHUg1wN </param-value>
+                 <param-value>b85s6CxR5fRe</param-value>
              </init-param>
          </servlet>
          <servlet-mapping>

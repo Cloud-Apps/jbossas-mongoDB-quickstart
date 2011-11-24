@@ -11,8 +11,8 @@ To use:
 1. Run: rhc-create-app -a testmongo -t jbossas-7.0
 2. Run: rhc-ctl-app -a testmongo -e add-mongodb-2.0
 3. Update the resulting testmongo repository by running:
-`git remote add upstream -m master git://github.com/openshift/jbossas-mongoDB-quickstart.git`
-`git pull -s recursive -X theirs upstream master`
+    git remote add upstream -m master git://github.com/openshift/jbossas-mongoDB-quickstart.git
+    git pull -s recursive -X theirs upstream master
 4. Edit the src/main/webapp/WEB-INF/web.xml init-param values to
 reflect the correct host, port, password based on the output from step 2.
 

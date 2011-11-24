@@ -13,6 +13,7 @@ To use:
 3. Update the resulting testmongo repository by running:
 
     git remote add upstream -m master git://github.com/openshift/jbossas-mongoDB-quickstart.git
+
     git pull -s recursive -X theirs upstream master
 4. Edit the src/main/webapp/WEB-INF/web.xml init-param values to
 reflect the correct host, port, password based on the output from step 2.

@@ -9,7 +9,7 @@ the steps in the MongoDB Java Tutorial:
 To use:
 
 1. Run: rhc app create -a testmongo -t jbossas-7
-2. Run: rhc app cartridge add -a testmongo -c add-mongodb-2.0
+2. Run: rhc app cartridge add -a testmongo -c mongodb-2.0
 3. Update the resulting testmongo repository by running:
 
     git remote add upstream -m master git://github.com/openshift/jbossas-mongoDB-quickstart.git

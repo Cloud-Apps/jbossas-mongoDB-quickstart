@@ -18,18 +18,14 @@ To use:
 
     git pull -s recursive -X theirs upstream master
 
-4. Edit the src/main/webapp/WEB-INF/web.xml init-param values to
-reflect the correct host, port, password based on the output from step 2.
 
-5. Commit the change, and then push, by running:
+4. Commit the change, and then push, by running:
 
-    git add src/main/webapp/WEB-INF/web.xml
-
-    git commit -m "change WEB-INF/web.xml to use the correct MongoDB settings
+    git commit -a -m "ready to run"
 
     git push
 
-6. The application will deploy.  You can access the test servlet by
+5. The application will deploy.  You can access the test servlet by
 appending /mongoDB to your application URL. For example:
 
     <http://testmongo-sstark.rhcloud.com/mongoDB>

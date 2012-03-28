@@ -51,7 +51,7 @@ public class MongoDBServlet extends HttpServlet {
         super.init(config);
 	String host = System.getenv("OPENSHIFT_NOSQL_DB_HOST");
         String sport = System.getenv("OPENSHIFT_NOSQL_DB_PORT");
-        String db = System.getenv("OPENSHIFT_APP_NAME");
+        String db = System.getenv("OPENSHIFT_GEAR_NAME");
         if(db == null)
             db = "mydb";
         String user = System.getenv("OPENSHIFT_NOSQL_DB_USERNAME");
@@ -61,7 +61,7 @@ public class MongoDBServlet extends HttpServlet {
         try {
             mongo = new Mongo(host , port);
         } catch (UnknownHostException e) {
-            throw new ServletException("Failed to accesss Mongo server", e);
+            throw new ServletException("Failed to access Mongo server", e);
         }
         mongoDB = mongo.getDB(db);
         if(mongoDB.authenticate(user, password.toCharArray()) == false) {
